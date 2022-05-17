@@ -4,42 +4,39 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}.
-Welcome to {}
+🇹🇷 Merhaba {}
 
-I am the Master of Whisperers (like Varys in Game of Thrones).
+• **Hos geldiniz** {}
 
-You can use me to send whispers to your friend in groups and channels (even if I'm not there).
-Only that friend and you will be able to read the message even though others are in same group. 
+✍🏻 **Ben Fısıldayanların Efendisiyim** . . .
 
-To see how to use me press 'How to Use' below.
+» **Gruplarda ve kanallarda arkadaşınıza fısıltı göndermek için beni kullanabilirsiniz ( Grubta olmasam bile )! **
 
-By @StarkBots
+» **Diğerleri aynı grupta olsa bile sadece o arkadaşınızin mesajını siz okuyabileceksiniz !** 
+
+`By` @ByWolk
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
+        [InlineKeyboardButton("🔒 𝖡𝗂𝗋 𝖥𝗂𝗌𝗂𝗅𝗍𝗂 𝖦𝗈𝗇𝖽𝖾𝗋 🔒", switch_inline_query="")],
+        [InlineKeyboardButton(text="🏠 𝖦𝖾𝗋𝗂 𝖦𝗂𝗍 🏠", callback_data="home")],
     ]
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")
+            InlineKeyboardButton("🔒 𝖡𝗂𝗋 𝖥𝗂𝗌𝗂𝗅𝗍𝗂 𝖦𝗈𝗇𝖽𝖾𝗋 🔒", switch_inline_query="")
         ],
-        [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
-        ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/StarkBotsChat")],
+
+        [InlineKeyboardButton("✍🏻 𝖭𝖺𝗌𝗂𝗅 𝖪𝗎𝗅𝗅𝖺𝗇𝗂𝗋𝗂𝗆 ?", callback_data="help")],
+        [InlineKeyboardButton("🇹🇷 𝖱𝖾𝗌𝗆𝗂 𝖪𝖺𝗇𝖺𝗅", url="https://t.me/StarBotKanal")],
     ]
 
     # Help Message
     HELP = """
-Just type the message in below format in any chat.
+»**Herhangi bir Grubta mesajı aşağıdaki gibi yazmanız yeterlidir **.
 
-`@WhisperStarkBot your_message friend_username/id`
+» @StarWhisperBot **Mesajiniz** `Kullanıcı Adı`
     """
 
     # About Message
