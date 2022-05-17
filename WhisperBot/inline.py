@@ -19,7 +19,7 @@ main = [
     InlineQueryResultArticle(
         title="Whisper Bot",
         input_message_content=InputTextMessageContent("» Mesajın Sonuna Kullanıcı Adı Yazin ."),
-        url="https://t.me/StarBotKanal",
+        url="https://t.me/StarWhisperBot",
         description="» Mesajın Sonuna Kullanıcı Adı Yazin .",
         thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
         reply_markup=InlineKeyboardMarkup(
@@ -33,7 +33,7 @@ main = [
 ]
 
 
-@Bot.on_chosen_inline_result()
+@Client.on_chosen_inline_result()
 async def _chosen(bot: Client, result: ChosenInlineResult):
     if result.query == "":
         return
@@ -81,7 +81,7 @@ async def previous_target(sender):
                   title=text1,
                   input_message_content=InputTextMessageContent(
                       f"Bir fısıltı mesajı {mention}" + " " + text2),
-                  url="https://t.me/StarBotKanal",
+                  url="https://t.me/StarWhisperBot",
                   description=text2,
                   thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
                   reply_markup=InlineKeyboardMarkup(
@@ -103,7 +103,7 @@ async def previous_target(sender):
 
 
 # Inline System
-@Bot.on_inline_query()
+@Client.on_inline_query()
 async def answer(bot: Client, query):
     query_list = query.query.split(" ")
     sender = query.from_user.id
@@ -152,7 +152,7 @@ async def answer(bot: Client, query):
                     InlineQueryResultArticle(
                         title=text1,
                         input_message_content=InputTextMessageContent(f"Bir fısıltı mesajı {target_user.mention}" + " " + text2),
-                        url="https://t.me/StarBotKanal",
+                        url="https://t.me/StarWhisperBot",
                         description=text2,
                         thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
                         reply_markup=InlineKeyboardMarkup(
