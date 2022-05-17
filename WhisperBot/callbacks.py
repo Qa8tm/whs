@@ -8,7 +8,7 @@ from WhisperBot.bot_users import check_for_users
 
 
 # Callbacks
-@Bot.on_callback_query()
+@Client.on_callback_query()
 async def _callbacks(bot, callback_query: CallbackQuery):
 	user = await bot.get_me()
 	mention = user["mention"]
