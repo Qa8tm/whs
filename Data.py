@@ -34,7 +34,7 @@ class Data:
 
     # Help Message
     HELP = """
-»**Herhangi bir Grubta mesajı aşağıdaki gibi yazmanız yeterlidir **.
+» **Herhangi bir Grubta mesajı aşağıdaki gibi yazmanız yeterlidir **.
 
 » @StarWhisperBot **Mesajiniz** `Kullanıcı Adı`
     """
