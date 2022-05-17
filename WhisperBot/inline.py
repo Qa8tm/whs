@@ -33,7 +33,7 @@ main = [
 ]
 
 
-@Client.on_chosen_inline_result()
+@Bot.on_chosen_inline_result()
 async def _chosen(bot: Client, result: ChosenInlineResult):
     if result.query == "":
         return
@@ -73,8 +73,8 @@ async def previous_target(sender):
             name = first_name + last_name
         except KeyError:
             name = first_name
-        text1 = f"A whisper message to {name}"
-        text2 = "Only he/she can open it."
+        text1 = f"Bir fısıltı mesajı {name}"
+        text2 = "Sadece o açabilir."
         mention = f"[{name}](tg://user?id={receiver})"
         results = [
               InlineQueryResultArticle(
@@ -103,7 +103,7 @@ async def previous_target(sender):
 
 
 # Inline System
-@Client.on_inline_query()
+@Bot.on_inline_query()
 async def answer(bot: Client, query):
     query_list = query.query.split(" ")
     sender = query.from_user.id
@@ -145,8 +145,8 @@ async def answer(bot: Client, query):
                 name = target_user.first_name + target_user.last_name
             else:
                 name = target_user.first_name
-            text1 = f"A whisper message to {name}"
-            text2 = "Only he/she can open it."
+            text1 = f"Bir fısıltı mesajı {name}"
+            text2 = "Sadece o açabilir."
             await query.answer(
                 results=[
                     InlineQueryResultArticle(
