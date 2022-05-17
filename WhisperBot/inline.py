@@ -18,9 +18,9 @@ from WhisperBot.bot_users import check_for_users
 main = [
     InlineQueryResultArticle(
         title="Whisper Bot",
-        input_message_content=InputTextMessageContent("**» Mesajın Sonuna Kullanıcı Adı Yazin .**"),
+        input_message_content=InputTextMessageContent("» Mesajın Sonuna Kullanıcı Adı Yazin ."),
         url="https://t.me/StarBotKanal",
-        description="**» Mesajın Sonuna Kullanıcı Adı Yazin .**.",
+        description="» Mesajın Sonuna Kullanıcı Adı Yazin .",
         thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
         reply_markup=InlineKeyboardMarkup(
             [
