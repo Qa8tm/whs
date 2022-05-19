@@ -4,54 +4,55 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-🇹🇷 Merhaba {}
+اهلا بك {}
 
-• **Hos geldiniz** {}
+• **مرحبا بك في** {}
 
-✍🏻 **Ben Fısıldayanların Efendisiyim** . . .
+✍🏻 **يمكنك كتابه رسائل خاصه لاشخاص** . . .
 
-» **Gruplarda ve kanallarda arkadaşınıza fısıltı göndermek için beni kullanabilirsiniz ( Grubta olmasam bile )! **
+» **ايضا يمكنك استعمالي في ارسال الرسائل في الكروبات من دون وجودي**
 
-» **Diğerleri aynı grupta olsa bile sadece o arkadaşınızin mesajını siz okuyabileceksiniz !** 
+» **فقط عليك كتابه يوزر البوت ومن ثم الرساله وبعدها يةزر الشخص المراد الارسال له !** 
 
-`By` @ByWolk
+`المطور` @K_8_U
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔒 𝖡𝗂𝗋 𝖥𝗂𝗌𝗂𝗅𝗍𝗂 𝖦𝗈𝗇𝖽𝖾𝗋 🔒", switch_inline_query="")],
-        [InlineKeyboardButton(text="🏠 𝖦𝖾𝗋𝗂 𝖦𝗂𝗍 🏠", callback_data="home")],
+        [InlineKeyboardButton("🔒 كتابه همسه 🔒", switch_inline_query="")],
+        [InlineKeyboardButton(text="🏠 رجوع 🏠", callback_data="home")],
     ]
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 𝖡𝗂𝗋 𝖥𝗂𝗌𝗂𝗅𝗍𝗂 𝖦𝗈𝗇𝖽𝖾𝗋 🔒", switch_inline_query="")
+            InlineKeyboardButton("🔒 كتابه همسه 🔒", switch_inline_query="")
         ],
 
-        [InlineKeyboardButton("✍🏻 𝖭𝖺𝗌𝗂𝗅 𝖪𝗎𝗅𝗅𝖺𝗇𝗂𝗋𝗂𝗆 ?", callback_data="help")],
-        [InlineKeyboardButton("🇹🇷 𝖱𝖾𝗌𝗆𝗂 𝖪𝖺𝗇𝖺𝗅", url="https://t.me/StarBotKanal")],
+        [InlineKeyboardButton("✍🏻 كيفيه كتابه الهمسه ?", callback_data="help")],
+        [InlineKeyboardButton("قناة البوت", url="https://t.me/ADWSL")],
     ]
 
     # Help Message
     HELP = """
-» **Herhangi bir Grubta mesajı aşağıdaki gibi yazmanız yeterlidir **.
+» **عليك كتابه يوزر البوت ومن ثم الرساله وبعدها يوزر الشخص **.
 
-» @StarWhisperBot **Mesajiniz** `Kullanıcı Adı`
+» **مثال : **
+
+» @azkarkbot **رسالتك** `يوزر الشخص`
     """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+**حول هذا البوت** 
 
-Bot created by @StarkBots
+تم التطوير بواسطه @K_8_U
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/WhisperBot)
 
-Inspired By : nnbbot
+البوت : azkarkbot
 
-Framework : [Pyrogram](docs.pyrogram.org)
+شكرا لـ : [Pyrogram](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+لغه البرمجه : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+قناة البوت : @ADWSL
     """
