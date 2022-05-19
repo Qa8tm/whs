@@ -37,7 +37,7 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text="» 𝖭𝖺𝗌𝗂𝗅 𝖪𝗎𝗅𝗅𝖺𝗇𝖺𝖼𝖺𝗀𝗂𝗇𝗂 𝖮𝗀𝗋𝖾𝗇 .\n" + Data.HELP,
+			text="» تعلم كتابه الهمسه .\n" + Data.HELP,
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(Data.home_buttons),
 		)
@@ -50,8 +50,8 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 			if q:
 				await callback_query.answer(q.message, show_alert=True)
 			else:
-				await callback_query.answer("» Mesaj bulunamadı . . .", show_alert=True)
+				await callback_query.answer("» الهمسه لم تعد موجوده السيرفر . . .", show_alert=True)
 			SESSION.commit()
 		else:
-			await callback_query.answer("» Bu Fısıltı Senin İçin Değil !", show_alert=True)
+			await callback_query.answer("» الهمسه ليست لكك !", show_alert=True)
 		await check_for_users(data_list)
