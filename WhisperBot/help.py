@@ -8,6 +8,6 @@ from pyrogram.types import InlineKeyboardMarkup
 async def _help(bot, msg):
     await bot.send_message(
         msg.chat.id,
-        "» **𝖭𝖺𝗌𝗂𝗅 𝖪𝗎𝗅𝗅𝖺𝗇𝖺𝖼𝖺𝗀𝗂𝗇𝗂 𝖮𝗀𝗋𝖾𝗇 🔐**\n" + Data.HELP,
+        "» **تعلم كتابه الهمسه 🔐**\n" + Data.HELP,
         reply_markup=InlineKeyboardMarkup(Data.home_buttons),
     )
